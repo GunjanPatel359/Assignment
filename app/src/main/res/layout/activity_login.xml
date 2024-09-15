@@ -7,25 +7,26 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/appLogo"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/launch_img1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="center"
         android:layout_marginTop="48dp"
-        app:layout_constraintHorizontal_bias="0.5" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/launch_img1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/CircleImageViewStyle" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
         android:layout_width="match_parent"
         android:layout_height="330dp"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="10dp"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="20dp"
+        android:layout_marginBottom="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,8 +35,8 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingHorizontal="30dp"
-            android:paddingVertical="25dp">
+            android:paddingVertical="25dp"
+            android:paddingHorizontal="20dp" >
 
             <EditText
                 android:id="@+id/etEmail"
@@ -44,8 +45,9 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
                 android:drawableStart="@drawable/baseline_email_24"
-                android:hint="Email or Username"
+                android:hint=" Email or Username"
                 android:inputType="textEmailAddress"
+                android:background="@drawable/rounded_edittext"
                 android:padding="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -58,8 +60,9 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_edittext"
                 android:drawableStart="@drawable/baseline_lock_24"
-                android:hint="Password"
+                android:hint=" Password"
                 android:inputType="textPassword"
                 android:padding="12dp"
                 app:layout_constraintEnd_toEndOf="parent"
