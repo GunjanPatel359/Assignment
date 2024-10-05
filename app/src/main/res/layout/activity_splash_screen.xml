@@ -24,7 +24,7 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/yeonsung_regular"
         android:text="Taste"
-        android:textColor="@color/text_color"
+        android:textColor="@color/black"
         android:textSize="55sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
