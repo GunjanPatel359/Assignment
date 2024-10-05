@@ -31,10 +31,5 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        findViewById<Button>(R.id.homebtn).setOnClickListener {
-            Intent(this,HomeActivity::class.java).also {
-                startActivity(it)
-            }
-        }
     }
 }
