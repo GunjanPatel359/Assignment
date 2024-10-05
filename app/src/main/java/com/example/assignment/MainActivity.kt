@@ -19,17 +19,5 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        findViewById<Button>(R.id.loginbtn).setOnClickListener {
-            Intent(this,LoginActivity::class.java).also {
-                startActivity(it)
-            }
-        }
-
-        findViewById<Button>(R.id.registerbtn).setOnClickListener {
-            Intent(this,RegisterActivity::class.java).also {
-                startActivity(it)
-            }
-        }
-
     }
 }
