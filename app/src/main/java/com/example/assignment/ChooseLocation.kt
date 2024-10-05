@@ -1,16 +1,16 @@
 package com.example.assignment
 
-import android.content.Intent
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.assignment.databinding.ActivityRegisterBinding
+import com.example.assignment.databinding.ActivityChooseLocationBinding
 
-class RegisterActivity : AppCompatActivity() {
-    private val binding:ActivityRegisterBinding by lazy {
-        ActivityRegisterBinding.inflate(layoutInflater)
+class ChooseLocation : AppCompatActivity() {
+    private val binding:ActivityChooseLocationBinding by lazy {
+        ActivityChooseLocationBinding.inflate(layoutInflater)
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,15 +21,10 @@ class RegisterActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        binding.textView18.setOnClickListener{
-            val intent= Intent(this, RegisterActivity::class.java)
-            startActivity(intent)
-        }
 
-        //sign up btn
-        binding.button6.setOnClickListener{
-            val intent= Intent(this, RegisterActivity::class.java)
-            startActivity(intent)
-        }
+        val locationList = arrayOf("Ahemdabad","mahesana","patan")
+        val adapter=ArrayAdapter(this,android.R.layout.simple_list_item_1,locationList)
+        val autoCompleteTextView=binding.listOfLocation
+        autoCompleteTextView.setAdapter(adapter)
     }
 }
