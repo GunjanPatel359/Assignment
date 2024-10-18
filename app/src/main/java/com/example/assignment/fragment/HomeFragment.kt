@@ -1,4 +1,4 @@
-package com.example.assignment.Fragment
+package com.example.assignment.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,10 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
 import com.example.assignment.R
+import com.example.assignment.adapter.PopularAdapter
 import com.example.assignment.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -50,8 +52,14 @@ class HomeFragment : Fragment() {
                 Toast.makeText(requireContext(),itemMessage,Toast.LENGTH_SHORT).show()
             }
         })
-    }
+        val foodName = listOf("Burger","sandwich","momo","item")
+        val price = listOf("$5","$7","$8","$10")
+        val popularFoodImages = listOf(R.drawable.menu_p1,R.drawable.menu_p2,R.drawable.menu_p3,R.drawable.menu_p1)
 
+        val adapter = PopularAdapter(foodName,price,popularFoodImages)
+        binding.PopularRecyclerView.layoutManager = LinearLayoutManager(requireContext())
+        binding.PopularRecyclerView.adapter = adapter
+    }
     companion object{
 
     }
