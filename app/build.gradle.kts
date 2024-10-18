@@ -60,4 +60,6 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.5")
 
     implementation("com.airbnb.android:lottie:6.5.2")
+
+    implementation("com.github.denzcoskun:ImageSlideshow:0.1.2")
 }
