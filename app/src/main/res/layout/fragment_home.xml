@@ -49,12 +49,12 @@
         android:fontFamily="@font/yeonsung_regular"
         android:text="Popular"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/textView21"
+        app:layout_constraintBottom_toBottomOf="@+id/ViewAllMenu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView21" />
+        app:layout_constraintTop_toTopOf="@+id/ViewAllMenu" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/ViewAllMenu"
         android:layout_width="80dp"
         android:layout_height="25dp"
         android:layout_marginTop="16dp"
