@@ -7,8 +7,6 @@
     android:background="@color/white"
     tools:context=".CongratsBottomSheet">
 
-    <!-- TODO: Update blank fragment layout -->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,11 +18,10 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="32dp"
             android:fontFamily="@font/yeonsung_regular"
-            android:text="@string/hello_blank_fragment"
             android:textAlignment="center"
             android:textColor="@color/text_color"
             android:textSize="32sp"
-            tools:text="Congrats\nYour Order Placed" />
+            android:text="Congrats\nYour Order Placed" />
 
         <ImageView
             android:id="@+id/imageView7"
