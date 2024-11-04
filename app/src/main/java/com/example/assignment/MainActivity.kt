@@ -33,7 +33,6 @@ class MainActivity : AppCompatActivity() {
             bottomSheetDialog.show(supportFragmentManager,"Test")
         }
     }
-
 }
 
 

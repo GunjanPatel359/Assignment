@@ -1,6 +1,7 @@
 package com.example.assignment.fragment
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,11 +13,17 @@ import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
 import com.example.assignment.MenuBottomSheetFragment
 import com.example.assignment.R
-import com.example.assignment.adapter.PopularAdapter
+import com.example.assignment.adapter.FoodItemsAdapter
+import com.example.assignment.api.FoodItemsResponse
+import com.example.assignment.api.RetrofitInstance
 import com.example.assignment.databinding.FragmentHomeBinding
+import com.example.assignment.dataclasses.FoodItem
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class HomeFragment : Fragment() {
-    private lateinit var binding:FragmentHomeBinding
+    private lateinit var binding: FragmentHomeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,7 +33,6 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         binding = FragmentHomeBinding.inflate(inflater,container,false)
         binding.ViewAllMenu.setOnClickListener{
             val bottomSheetDialog = MenuBottomSheetFragment()
@@ -39,14 +45,14 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val imageList=ArrayList<SlideModel>()
-        imageList.add(SlideModel(R.drawable.banner_bg_1,ScaleTypes.FIT))
+        imageList.add(SlideModel(R.drawable.banner_bg_1, ScaleTypes.FIT))
         imageList.add(SlideModel(R.drawable.banner_bg_2,ScaleTypes.FIT))
         imageList.add(SlideModel(R.drawable.banner_bg_3,ScaleTypes.FIT))
 
         val imageSlider = binding.imageSlider
         imageSlider.setImageList(imageList)
         imageSlider.setImageList(imageList, ScaleTypes.FIT)
-        imageSlider.setItemClickListener(object :ItemClickListener{
+        imageSlider.setItemClickListener(object : ItemClickListener {
             override fun doubleClick(position: Int) {
                 TODO("Not yet implemented")
             }
@@ -57,15 +63,40 @@ class HomeFragment : Fragment() {
                 Toast.makeText(requireContext(),itemMessage,Toast.LENGTH_SHORT).show()
             }
         })
-        val foodName = listOf("Burger","sandwich","momo","item")
-        val price = listOf("$5","$7","$8","$10")
-        val popularFoodImages = listOf(R.drawable.food1,R.drawable.food2,R.drawable.food3,R.drawable.food1)
 
-        val adapter = PopularAdapter(foodName,price,popularFoodImages,requireContext())
         binding.PopularRecyclerView.layoutManager = LinearLayoutManager(requireContext())
-        binding.PopularRecyclerView.adapter = adapter
+        fetchPopularItems()
     }
-    companion object{
 
+    private fun fetchPopularItems() {
+        RetrofitInstance.api.getFoodItems().enqueue(object : Callback<FoodItemsResponse> {
+            override fun onResponse(
+                call: Call<FoodItemsResponse>,
+                response: Response<FoodItemsResponse>
+            ) {
+                if (response.isSuccessful) {
+                    val foodItems = response.body()?.fooditem ?: emptyList()
+                    setupRecyclerView(foodItems)
+                } else {
+                    Log.e("HomeFragment", "Failed to fetch data: ${response.errorBody()?.string()}")
+                }
+            }
+
+            override fun onFailure(call: Call<FoodItemsResponse>, t: Throwable) {
+                Log.e("HomeFragment", "Error fetching data", t)
+                Toast.makeText(requireContext(), "Failed to load data", Toast.LENGTH_SHORT).show()
+            }
+        })
+    }
+
+    private fun setupRecyclerView(foodItems: List<FoodItem>) {
+        val adapter = FoodItemsAdapter(
+            id = foodItems.map { it._id },
+            items = foodItems.map { it.name },
+            prices = foodItems.map { "${it.price}/-" },
+            imageUrls = foodItems.map { it.imageUrl },
+            context = requireContext()
+        )
+        binding.PopularRecyclerView.adapter = adapter
     }
 }
