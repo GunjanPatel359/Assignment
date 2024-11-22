@@ -50,3 +50,16 @@ This app is built with:
    - **Retrofit:** For making API integration straightforward.
    - **Denzcoskun:** For providing a great image slideshow library.
    - **Gson:** For simplifying JSON conversion.
+
+## 📸 images
+Here are some screenshots of the **Taste** app:
+![Loading screen](https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/loadingpage.jpeg)
+![Home Page](https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/homepage.jpeg)
+![Food Page](https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/fooddescriptionpage.jpeg)
+![Menu](https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/menupage.jpeg)
+![Login Page](https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/loginpage.jpeg)
+![Register Page](https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/registerpage.jpeg)
+![Search Page](https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/searchpage.jpeg)
+![Profile Page](https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/profilepage.jpeg)
+![History Page](https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/historypage.jpeg)
+
