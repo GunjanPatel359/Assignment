@@ -2,7 +2,7 @@
 
 github url(web app):[food-app](https://github.com/GunjanPatel359/food-app) (web version repo)
 
-[Live Web Demo](https://food-app-ixbg.vercel.app)(web version)
+[Live Web Demo](https://food-app-ixbg.vercel.app) (web version)
 
 
 ## 📋 Description
@@ -27,3 +27,8 @@ Follow these steps to get the app running locally:
 1. Clone the repository:
    ```bash
    git clone https://github.com/username/taste-mobile.git
+2. Open the project in Android Studio.
+3. Sync the Gradle files to download dependencies.
+4. Build and run the app on an Android device or emulator:
+   - Use the play button in Android Studio
+
