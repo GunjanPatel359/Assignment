@@ -28,13 +28,10 @@ Clone the repository:
    ```bash
    git clone https://github.com/username/taste-mobile.git
    ```
-
 ### step 2
 Open the project in Android Studio.
-
 ### step 3
 Sync the Gradle files to download dependencies.
-
 ### step 4
 Build and run the app on an Android device or emulator:
   - Use the play button in Android Studio
