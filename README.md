@@ -53,13 +53,30 @@ This app is built with:
 
 ## 📸 images
 Here are some screenshots of the **Taste** app:
-![Loading screen](https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/loadingpage.jpeg)
-![Home Page](https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/homepage.jpeg)
-![Food Page](https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/fooddescriptionpage.jpeg)
-![Menu](https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/menupage.jpeg)
-![Login Page](https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/loginpage.jpeg)
-![Register Page](https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/registerpage.jpeg)
-![Search Page](https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/searchpage.jpeg)
-![Profile Page](https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/profilepage.jpeg)
-![History Page](https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/historypage.jpeg)
+# Loading Screen
+<img src="https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/loadingpage.jpeg" alt="Loading screen" width="300" />
+
+# Home Page
+<img src="https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/homepage.jpeg" alt="Home Page" width="300" />
+
+# Food Page
+<img src="https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/fooddescriptionpage.jpeg" alt="Food Page" width="300" />
+
+# Menu
+<img src="https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/menupage.jpeg" alt="Menu" width="300" />
+
+# Login Page
+<img src="https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/loginpage.jpeg" alt="Login Page" width="300" />
+
+# Register Page
+<img src="https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/registerpage.jpeg" alt="Register Page" width="300" />
+
+# Search Page
+<img src="https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/searchpage.jpeg" alt="Search Page" width="300" />
+
+# Profile Page
+<img src="https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/profilepage.jpeg" alt="Profile Page" width="300" />
+
+# History Page
+<img src="https://raw.githubusercontent.com/GunjanPatel359/Assignment/refs/heads/master/app/src/main/res/drawable/historypage.jpeg" alt="History Page" width="300" />
 
