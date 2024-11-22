@@ -1,5 +1,5 @@
-# Taste 🍴
-(mobile version)
+# Taste 🍴 (mobile version)
+
 github url(web app): [food-app](https://github.com/GunjanPatel359/food-app) (web version repo)
 
 [Live Web Demo](https://food-app-ixbg.vercel.app) (web version)
