@@ -26,7 +26,7 @@ Follow these steps to get the app running locally:
 ### step 1
 Clone the repository:
    ```bash
-   git clone https://github.com/username/taste-mobile.git
+   git clone https://github.com/username/taste-mobile.git```
 ### step 2
 Open the project in Android Studio.
 ### step 3
