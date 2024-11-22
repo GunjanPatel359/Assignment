@@ -38,15 +38,15 @@ Build and run the app on an Android device or emulator:
 
 ## 🧩 Technologies
 This app is built with:
-- **Kotlin** for modern Android development.
-- **MVVM Architecture** for clean and maintainable code.
-- **Retrofit** for seamless API integration.
-- **Picasso** for efficient image loading and display.
-- **Denzcoskun** Image Slide Show for visually appealing image carousels.
-- **Gson Converter** for converting requests to and from JSON format.
+   - **Kotlin** for modern Android development.
+   - **MVVM Architecture** for clean and maintainable code.
+   - **Retrofit** for seamless API integration.
+   - **Picasso** for efficient image loading and display.
+   - **Denzcoskun** Image Slide Show for visually appealing image carousels.
+   - **Gson Converter** for converting requests to and from JSON format.
 
-  🛡️ Acknowledgements
-- **Picasso:** For its effortless image handling.
-- **Retrofit:** For making API integration straightforward.
-- **Denzcoskun:** For providing a great image slideshow library.
-- **Gson:** For simplifying JSON conversion.
+## 🛡️ Acknowledgements
+   - **Picasso:** For its effortless image handling.
+   - **Retrofit:** For making API integration straightforward.
+   - **Denzcoskun:** For providing a great image slideshow library.
+   - **Gson:** For simplifying JSON conversion.
