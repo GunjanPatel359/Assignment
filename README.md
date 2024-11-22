@@ -1,9 +1,7 @@
 # Taste 🍴
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)]()
 github url(web app):(https://github.com/GunjanPatel359/food-app)(web version repo)
-[![Live Web Demo](https://food-app-ixbg.vercel.app/)(web version)
+[![Live Web Demo](https://food-app-ixbg.vercel.app)(web version)
 
 
 ## 📋 Description
