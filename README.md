@@ -15,8 +15,8 @@ Web version repo: [https://github.com/GunjanPatel359/food-app](https://github.co
 
 ## 🚀 Features
 
-- Browse a variety of restaurant menus.
-- variety of food
+- Launch the app on your Android device.
+- Browse restaurant menus and explore various dishes.
 - View food details including ingredients and high-quality images.
 - Place orders directly through the app.
 
@@ -38,8 +38,15 @@ Build and run the app on an Android device or emulator:
 
 ## 🧩 Technologies
 This app is built with:
-- Kotlin for Android development.
-- MVVM Architecture for clean and maintainable code.
-- Retrofit for API integration.
-- Coroutines for asynchronous programming.
-- Glide for efficient image loading.
+- **Kotlin** for modern Android development.
+- **MVVM Architecture** for clean and maintainable code.
+- **Retrofit** for seamless API integration.
+- **Picasso** for efficient image loading and display.
+- **Denzcoskun** Image Slide Show for visually appealing image carousels.
+- **Gson Converter** for converting requests to and from JSON format.
+
+  🛡️ Acknowledgements
+- **Picasso:** For its effortless image handling.
+- **Retrofit:** For making API integration straightforward.
+- **Denzcoskun:** For providing a great image slideshow library.
+- **Gson:** For simplifying JSON conversion.
