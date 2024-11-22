@@ -36,3 +36,10 @@ Sync the Gradle files to download dependencies.
 Build and run the app on an Android device or emulator:
   - Use the play button in Android Studio
 
+## 🧩 Technologies
+This app is built with:
+- Kotlin for Android development.
+- MVVM Architecture for clean and maintainable code.
+- Retrofit for API integration.
+- Coroutines for asynchronous programming.
+- Glide for efficient image loading.
