@@ -1,6 +1,7 @@
 # Taste 🍴
 
-github url(web app):(https://github.com/GunjanPatel359/food-app) (web version repo)
+github url(web app):[food-app](https://github.com/GunjanPatel359/food-app) (web version repo)
+
 [![Live Web Demo](https://food-app-ixbg.vercel.app)(web version)
 
 
@@ -9,6 +10,7 @@ github url(web app):(https://github.com/GunjanPatel359/food-app) (web version re
 **Taste** is the **Android mobile version** of our popular web app, built using **Kotlin**. It allows users to explore a variety of cuisines, browse restaurant menus, and order delicious dishes. With detailed ingredient lists and high-quality food images, choosing your next meal has never been easier.
 
 Try the live web version here: [https://food-app-ixbg.vercel.app/](https://food-app-ixbg.vercel.app/)
+
 Web version repo: [https://github.com/GunjanPatel359/food-app](https://github.com/GunjanPatel359/food-app)
 
 ## 🚀 Features
